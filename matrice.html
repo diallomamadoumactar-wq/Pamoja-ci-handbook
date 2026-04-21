@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrice tactique — PAMOJA CI</title>
+<meta name="description" content="50 tactiques filtrables par persona, pilier et COM-B. La boîte à outils opérationnelle du dispositif.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">PAMOJA<em>CI · Handbook narratif</em></a>
+    <div class="nav-links">
+      <a href="ned.html">Le modèle</a>
+      <a href="strategie.html">Stratégie</a>
+      <a href="personas.html">Personas</a>
+      <a href="matrice.html">Matrice</a>
+      <a href="services.html">Services</a>
+      <a href="dashboard.html">Data</a>
+      <a href="outils.html">Outils</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <a href="matrice.html" class="active">FR</a>
+        <a href="en/index.html" title="English version available only on selected pages">EN</a>
+      </div>
+      <span class="nav-cta-disabled" title="Zone interne — bientôt disponible">Espace équipe</span>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+
+  <section style="padding: 100px 32px 40px;">
+    <div class="container">
+      <div class="eyebrow">Chantier 2 · Matrice tactique SBC</div>
+      <h1>Cinquante tactiques.<br><em>Filtrer. Trier. Contester.</em></h1>
+      <p class="lead" style="max-width: 62ch;">Cette matrice croise les 6 personas avec les formats opérationnels PAMOJA 2026. Chaque ligne est une tactique actionnable — comportement cible, norme travaillée, angle narratif, atterrissage. Outil de travail vivant, conçu pour être enrichi et corrigé en atelier.</p>
+      <p style="margin-top: 20px; color: var(--ink-muted); font-size: 14px;">27 tactiques visibles sur ce site. La matrice complète (50 tactiques) est disponible dans la <a href="outils.html" style="color: var(--accent); text-decoration: underline;">boîte à outils</a> au format Excel filtrable.</p>
+    </div>
+  </section>
+
+  <div class="matrice-filters">
+    <div class="filter-group">
+      <label>Persona</label>
+      <button class="filter-chip active" data-f="persona" data-v="all">Tous</button>
+      <button class="filter-chip" data-f="persona" data-v="aminata">Aminata</button>
+      <button class="filter-chip" data-f="persona" data-v="adjoua">Adjoua</button>
+      <button class="filter-chip" data-f="persona" data-v="koffi">Koffi</button>
+      <button class="filter-chip" data-f="persona" data-v="tantie">Tantie Affoué</button>
+      <button class="filter-chip" data-f="persona" data-v="eliane">Dr Éliane</button>
+      <button class="filter-chip" data-f="persona" data-v="mariam">Pasteur Mariam</button>
+    </div>
+    <div class="filter-group">
+      <label>Pilier</label>
+      <button class="filter-chip active" data-f="pilier" data-v="all">Tous</button>
+      <button class="filter-chip" data-f="pilier" data-v="P1">P1</button>
+      <button class="filter-chip" data-f="pilier" data-v="P2">P2</button>
+      <button class="filter-chip" data-f="pilier" data-v="P3">P3</button>
+      <button class="filter-chip" data-f="pilier" data-v="P4">P4</button>
+    </div>
+    <div class="filter-group">
+      <label>COM-B</label>
+      <button class="filter-chip active" data-f="comb" data-v="all">Tous</button>
+      <button class="filter-chip" data-f="comb" data-v="C">Capacité</button>
+      <button class="filter-chip" data-f="comb" data-v="O">Opportunité</button>
+      <button class="filter-chip" data-f="comb" data-v="M">Motivation</button>
+    </div>
+    <div class="filter-group" style="margin-left: auto;">
+      <label>Affichées</label>
+      <span id="tactique-counter" style="font-family: var(--mono); font-size: 13px; color: var(--ink);">27 / 27</span>
+    </div>
+  </div>
+
+  <div class="tactique-list" id="tactique-list"></div>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">PAMOJA<em>.</em>CI</div>
+      <p style="color: rgba(255,255,255,0.6); font-size: 14px; max-width: 42ch;">Application du Narrative Ecosystem Design aux campagnes du projet PAMOJA en Côte d'Ivoire. Handbook v2 · 2026.</p>
+    </div>
+    <div>
+      <h4>Handbook</h4>
+      <a href="strategie.html">Stratégie</a>
+      <a href="personas.html">Personas</a>
+      <a href="matrice.html">Matrice</a>
+      <a href="services.html">Services</a>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <a href="dashboard.html">Data</a>
+      <a href="outils.html">Outils</a>
+      <a href="sources.html">Sources</a>
+      <a href="ned.html">Le modèle NED</a>
+    </div>
+    <div>
+      <h4>À propos</h4>
+      <a href="apropos.html">PAMOJA CI</a>
+      <a href="mailto:contact@pamoja-ci.org">Contact</a>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <span>RAES · 2026 · Handbook v2</span>
+    <span>Données snapshot · Avril 2026</span>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+<script src="assets/matrice.js"></script>
+</body>
+</html>
