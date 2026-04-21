@@ -27,7 +27,7 @@ const NED_DETAILS = {
   },
   recit: {
     title: 'Niveau 4 — Grand récit central et boussole morale',
-    desc: 'La phrase-matrice qui oriente tout l\'écosystème. Pour PAMOJA CI : « Nous ne laissons pas les nôtres mourir seules. » La boussole morale associée précise les valeurs qui doivent rester partagées entre tous les contenus — compassion, protection, dignité, responsabilité partagée.'
+    desc: 'La phrase-matrice qui oriente tout l\'écosystème. Pour PAMOJA CI : « En Côte d\'Ivoire, nous protégeons les nôtres. » La boussole morale associée précise les valeurs qui doivent rester partagées entre tous les contenus — compassion, protection, dignité, responsabilité partagée.'
   },
   piliers: {
     title: 'Niveau 3 — Piliers narratifs',
