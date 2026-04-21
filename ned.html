@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le modèle NED — PAMOJA CI</title>
+<meta name="description" content="Narrative Ecosystem Design : définition, architecture, rôles, gouvernance, principes, mesure, distinction, cycle de vie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">PAMOJA<em>CI · Handbook narratif</em></a>
+    <div class="nav-links">
+      <a href="ned.html">Le modèle</a>
+      <a href="strategie.html">Stratégie</a>
+      <a href="personas.html">Personas</a>
+      <a href="matrice.html">Matrice</a>
+      <a href="services.html">Services</a>
+      <a href="dashboard.html">Data</a>
+      <a href="outils.html">Outils</a>
+    </div>
+    <span class="nav-cta-disabled" title="Zone interne — bientôt disponible">Espace équipe</span>
+  </div>
+</nav>
+
+<main class="main">
+
+  <section style="padding: 80px 32px 40px;">
+    <div class="container">
+      <div class="eyebrow">Le modèle</div>
+      <h1 class="display">NED — <em>Narrative<br>Ecosystem Design.</em></h1>
+      <p class="lead" style="max-width: 62ch; margin-top: 30px;">
+        Le NED est une discipline d'architecture d'infrastructure narrative. Le projet PAMOJA en Côte d'Ivoire en est <em class="accent">une application</em> — pas une incarnation unique. Cette page décrit le modèle lui-même, ses rôles, ses principes et sa mesure.
+      </p>
+    </div>
+  </section>
+
+  <div class="ned-toc">
+    <div class="ned-toc-inner">
+      <a onclick="scrollToNED('ned-s1')">01 Définition</a>
+      <a onclick="scrollToNED('ned-s2')">02 Architecture</a>
+      <a onclick="scrollToNED('ned-s3')">03 Rôles</a>
+      <a onclick="scrollToNED('ned-s4')">04 Gouvernance</a>
+      <a onclick="scrollToNED('ned-s5')">05 Principes</a>
+      <a onclick="scrollToNED('ned-s6')">06 Mesure</a>
+      <a onclick="scrollToNED('ned-s7')">07 Distinction</a>
+      <a onclick="scrollToNED('ned-s8')">08 Cycle</a>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <div class="ned-section" id="ned-s1">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">01<small>Définition</small></div>
+      <div>
+        <h2>Ce que le NED est — et ce qu'il n'est pas.</h2>
+        <p>Le Narrative Ecosystem Design est une discipline d'architecture d'infrastructure narrative. Il vise à faire émerger, stabiliser et diffuser des narratifs dominants favorables à un changement social ou comportemental, à travers l'orchestration d'un écosystème interconnecté d'acteurs, de récits, de plateformes et de dynamiques sociales.</p>
+        <p>Il emprunte à plusieurs traditions sans se confondre avec elles : au recadrage narratif de FrameWorks Institute, à la convergence culturelle documentée par le Norman Lear Center, au Social Behavior Change classique sur les comportements et normes, à la pensée systémique appliquée aux récits.</p>
+
+        <div class="ned-def-grid">
+          <div class="ned-def is-yes">
+            <h4>Le NED EST</h4>
+            <ul>
+              <li>Une discipline en développement</li>
+              <li>Une grammaire d'architecture d'écosystème</li>
+              <li>Un ensemble de principes et de méthodes</li>
+              <li>Transposable à différents contextes et sujets</li>
+            </ul>
+          </div>
+          <div class="ned-def is-no">
+            <h4>Le NED n'EST PAS</h4>
+            <ul>
+              <li>Une méthodologie de brief créatif</li>
+              <li>Une stratégie de campagne 360</li>
+              <li>Une théorie académique stabilisée</li>
+              <li>Un livrable final ou une marque de projet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 — Architecture avec schéma SVG interactif -->
+  <div class="ned-section" id="ned-s2">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">02<small>Architecture</small></div>
+      <div>
+        <h2>Les cinq niveaux de l'architecture narrative.</h2>
+        <p>Un écosystème narratif bien conçu s'organise en cinq niveaux emboîtés, du plus diffus au plus tangible. La cohérence se joue dans la <em class="accent">convergence morale</em> entre les niveaux — pas dans l'uniformité éditoriale.</p>
+
+        <div class="ned-schema-wrap">
+          <svg viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg" aria-label="Architecture NED - 5 niveaux emboîtés">
+            <defs>
+              <marker id="na2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M2 1L8 5L2 9" fill="none" stroke="#786F66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </marker>
+            </defs>
+            <rect x="30" y="30" width="560" height="420" rx="20" fill="#F3D9DB" stroke="#D0454C" stroke-width="1" stroke-dasharray="4 4" opacity="0.4" class="ned-node" style="cursor: pointer;" onclick="showNEDDetail('nuage')"/>
+            <text x="310" y="54" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#A7383E" font-weight="500" letter-spacing="1.2" style="pointer-events: none;">NIVEAU 5 — NUAGE NARRATIF</text>
+            <rect x="60" y="72" width="500" height="360" rx="14" fill="#FDECEF" stroke="#D0454C" stroke-width="1" class="ned-node" style="cursor: pointer;" onclick="showNEDDetail('recit')"/>
+            <text x="310" y="94" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#A7383E" font-weight="500" letter-spacing="1.2" style="pointer-events: none;">NIVEAU 4 — GRAND RÉCIT · BOUSSOLE MORALE</text>
+            <rect x="90" y="114" width="440" height="300" rx="12" fill="#FFFFFF" stroke="#A8998B" stroke-width="1" class="ned-node" style="cursor: pointer;" onclick="showNEDDetail('piliers')"/>
+            <text x="310" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#786F66" font-weight="500" letter-spacing="1.2" style="pointer-events: none;">NIVEAU 3 — PILIERS NARRATIFS</text>
+            <rect x="120" y="156" width="380" height="240" rx="10" fill="#EBE3D4" stroke="#A8998B" stroke-width="1" class="ned-node" style="cursor: pointer;" onclick="showNEDDetail('cercles')"/>
+            <text x="310" y="178" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#786F66" font-weight="500" letter-spacing="1.2" style="pointer-events: none;">NIVEAU 2 — CERCLES CONCENTRIQUES</text>
+            <rect x="150" y="198" width="320" height="180" rx="8" fill="#F4EFE6" stroke="#1A1A1A" stroke-width="1" class="ned-node" style="cursor: pointer;" onclick="showNEDDetail('tactiques')"/>
+            <text x="310" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#3E3731" font-weight="500" letter-spacing="1.2" style="pointer-events: none;">NIVEAU 1 — TACTIQUES + ATTERRISSAGES</text>
+            <text x="310" y="260" text-anchor="middle" font-family="Fraunces, serif" font-size="22" fill="#1A1A1A" font-weight="400" font-style="italic" style="pointer-events: none;">Un contenu · un format</text>
+            <text x="310" y="290" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#786F66" style="pointer-events: none;">TikTok, radio, prêche, atelier,</text>
+            <text x="310" y="310" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#786F66" style="pointer-events: none;">podcast, article — avec un</text>
+            <text x="310" y="330" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#786F66" style="pointer-events: none;">atterrissage concret réel.</text>
+            <text x="310" y="358" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#D0454C" font-weight="500" letter-spacing="1.2" style="pointer-events: none;">CLIQUEZ CHAQUE NIVEAU</text>
+            <path d="M 595 240 Q 660 240 660 110 Q 660 50 610 50" fill="none" stroke="#786F66" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#na2)"/>
+            <text x="670" y="148" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9" fill="#786F66" letter-spacing="1.0" style="pointer-events: none;">
+              <tspan x="670" dy="0">MONITORING</tspan>
+              <tspan x="670" dy="14">SIGNAUX</tspan>
+              <tspan x="670" dy="14">AJUSTEMENT</tspan>
+            </text>
+          </svg>
+          <div class="ned-schema-hint">Cliquez sur chaque niveau pour voir son rôle.</div>
+          <div id="ned-schema-detail" class="ned-schema-detail">
+            <h4 id="ned-schema-title">—</h4>
+            <p id="ned-schema-desc">—</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="ned-section" id="ned-s3">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">03<small>Rôles</small></div>
+      <div>
+        <h2>Quatre rôles dans un écosystème NED.</h2>
+        <p>Un NED vivant s'organise autour de quatre rôles interdépendants. La clarté de ces rôles est la condition de la non-redondance — et de la non-dépendance à une structure centrale qui tenterait de tout contrôler.</p>
+        <div class="roles-grid">
+          <div class="role-card">
+            <div class="role-tag">Rôle · 01</div>
+            <h4>L'architecte</h4>
+            <div class="who">Dans PAMOJA CI : RAES</div>
+            <p>Dessine l'écosystème, définit le cadre stratégique, identifie les acteurs, valide la cohérence morale de l'ensemble. Ne produit pas les contenus — il orchestre ceux qui les produisent.</p>
+          </div>
+          <div class="role-card">
+            <div class="role-tag">Rôle · 02</div>
+            <h4>Le laboratoire</h4>
+            <div class="who">Dans PAMOJA CI : OASIS</div>
+            <p>Recherche, test, mesure, affine la méthodologie. Remonte les signaux faibles, documente les apprentissages, ajuste le modèle au fil des cycles. Garde-fou contre la rigidité du cadre.</p>
+          </div>
+          <div class="role-card">
+            <div class="role-tag">Rôle · 03</div>
+            <h4>Les producteurs</h4>
+            <div class="who">Dans PAMOJA CI : 6 catégories d'acteurs</div>
+            <p>Créent les contenus, portent les récits dans leurs médias. Autonomes dans leur créativité, alignés sur la boussole morale partagée. Créateurs digitaux, équipes radio, maisons de production, OSC, leaders religieux, journalistes.</p>
+          </div>
+          <div class="role-card">
+            <div class="role-tag">Rôle · 04</div>
+            <h4>Les destinataires</h4>
+            <div class="who">Dans PAMOJA CI : 6 personas</div>
+            <p>Pas passifs. À mesure que les normes se déplacent, certains destinataires deviennent relais (Tantie Affoué, Pasteur Mariam). L'écosystème se renforce par cette conversion — condition de sa résilience sans contrôle central.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="ned-section" id="ned-s4">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">04<small>Gouvernance</small></div>
+      <div>
+        <h2>Trois niveaux de gouvernance à ne pas confondre.</h2>
+        <p>La confusion entre « le NED » et « PAMOJA CI » est fréquente — et elle brouille la conversation avec les bailleurs, les partenaires et les équipes. Trois niveaux distincts cohabitent :</p>
+        <ul class="editorial">
+          <li><strong>Discipline — Le NED.</strong> Corpus méthodologique en développement, porté par RAES / OASIS. Transposable à d'autres contextes, d'autres sujets, d'autres pays. Non propriétaire au projet PAMOJA.</li>
+          <li><strong>Application — Le projet PAMOJA en Côte d'Ivoire.</strong> Le cadre, la matrice, les briefs, les services, les livrables. Application du NED au contexte ivoirien SSR. C'est le périmètre de ce handbook.</li>
+          <li><strong>Cycles — Les campagnes annuelles.</strong> 2026, 2027, 2028. Chaque cycle produit apprentissage et ajustement — du cadre local (application) et du modèle (discipline).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="ned-section" id="ned-s5">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">05<small>Principes</small></div>
+      <div>
+        <h2>Cinq principes méthodologiques.</h2>
+        <p>Ce qui distingue un écosystème narratif bien conçu d'une campagne standard — et qui guide les décisions dans l'ambiguïté.</p>
+        <div class="principles-list">
+          <div class="principle">
+            <div class="principle-num">i.</div>
+            <div class="principle-body">
+              <h4>Convergence avant contrôle</h4>
+              <p>On ne contrôle pas chaque contenu. On s'assure que l'écosystème produit des contenus moralement convergents. La cohérence passe par la boussole morale partagée, pas par un comité de validation.</p>
+            </div>
+          </div>
+          <div class="principle">
+            <div class="principle-num">ii.</div>
+            <div class="principle-body">
+              <h4>Densité avant viralité</h4>
+              <p>Un nuage narratif efficace est permanent et dense. La viralité ponctuelle ne déplace pas les normes. Vingt contenus moyens alignés déplacent plus qu'un contenu viral isolé.</p>
+            </div>
+          </div>
+          <div class="principle">
+            <div class="principle-num">iii.</div>
+            <div class="principle-body">
+              <h4>Atterrissage avant diffusion</h4>
+              <p>Créer de la demande sans points d'atterrissage réels amplifie les circuits clandestins. L'écosystème de services doit être aussi cartographié que l'écosystème narratif.</p>
+            </div>
+          </div>
+          <div class="principle">
+            <div class="principle-num">iv.</div>
+            <div class="principle-body">
+              <h4>Boussole morale avant ligne éditoriale</h4>
+              <p>La cohérence se fait sur les valeurs sous-jacentes, pas sur la charte de style. Un pasteur, un TikTokeur et un journaliste peuvent dire la même chose avec des mots différents si la boussole est partagée.</p>
+            </div>
+          </div>
+          <div class="principle">
+            <div class="principle-num">v.</div>
+            <div class="principle-body">
+              <h4>Cycle long avant coup unique</h4>
+              <p>Un NED se mesure en années, pas en saisons. Les campagnes sont des moments d'intensification — l'infrastructure continue entre les cycles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="ned-section" id="ned-s6">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">06<small>Mesure</small></div>
+      <div>
+        <h2>Comment se mesure un écosystème narratif.</h2>
+        <p>Les indicateurs tactiques (vues, reach, engagement) restent utiles pour piloter les tactiques individuelles. Mais ils ne mesurent pas le NED. Quatre indicateurs stratégiques le mesurent.</p>
+        <div class="measure-grid">
+          <div class="measure-cell">
+            <h4>Densité narrative</h4>
+            <p>Volume de contenus moralement convergents qui circulent en autonomie, y compris ceux que RAES n'a pas produits ou validés directement. Indicateur de santé de l'écosystème.</p>
+          </div>
+          <div class="measure-cell">
+            <h4>Déplacement des normes</h4>
+            <p>Mesuré par social listening répété et recherche qualitative à intervalles réguliers. Les normes sociales se déplacent lentement — le suivi doit être patient et long.</p>
+          </div>
+          <div class="measure-cell">
+            <h4>Absorption par les atterrissages</h4>
+            <p>Ratio entre la demande créée par les contenus et la demande effectivement absorbée par les services formels sûrs. Un ratio faible signale une campagne dangereuse.</p>
+          </div>
+          <div class="measure-cell">
+            <h4>Résilience de l'infrastructure</h4>
+            <p>Capacité du système à continuer à produire des récits convergents sans intervention centrale. Mesurée par la persistance des productions entre les cycles d'intensification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="ned-section" id="ned-s7">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">07<small>Distinction</small></div>
+      <div>
+        <h2>Ce qui distingue le NED d'approches comparables.</h2>
+        <p>Le NED emprunte à plusieurs traditions — mais il ne s'y réduit pas. Voici les différences structurantes avec les approches qu'on confond souvent avec lui.</p>
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Approche</th>
+              <th>Focus principal</th>
+              <th>Différence avec le NED</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SBC classique</td>
+              <td>Comportements et normes chez un public défini</td>
+              <td>Le NED travaille l'infrastructure narrative <em>en amont</em> des comportements. Le SBC reste un composant du NED, pas un substitut.</td>
+            </tr>
+            <tr>
+              <td>Communication 360</td>
+              <td>Cohérence multicanaux d'un message unique</td>
+              <td>Le NED orchestre des récits portés par des acteurs divers avec leur voix propre — pas un message unifié. La diversité des voix est une force.</td>
+            </tr>
+            <tr>
+              <td>Advocacy</td>
+              <td>Faire bouger les décideurs sur une politique précise</td>
+              <td>Le NED travaille l'environnement culturel qui rend possible l'acceptation des plaidoyers — il précède et nourrit l'advocacy.</td>
+            </tr>
+            <tr>
+              <td>Brand campaign</td>
+              <td>Identité et notoriété d'une marque</td>
+              <td>Le NED ne porte pas de marque, il porte des récits partagés. Un acteur PAMOJA peut être invisible pour l'audience finale.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 8 -->
+  <div class="ned-section" id="ned-s8">
+    <div class="ned-section-grid">
+      <div class="ned-section-num">08<small>Cycle</small></div>
+      <div>
+        <h2>Le cycle de vie d'une application NED.</h2>
+        <p>Un NED appliqué ne se déploie pas en une campagne. Il suit un cycle long qui combine des moments d'intensification (les campagnes annuelles) et des périodes d'infrastructure qui continue entre les cycles.</p>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="step-time">Avant · 6-12 mois</div>
+            <h4>Diagnostic</h4>
+            <p>Cartographie narrative, cartographie acteurs, cadre stratégique, matrice tactique, cartographie des services d'atterrissage. C'est là où le projet PAMOJA en CI se trouve aujourd'hui.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-time">Pendant · 3-6 mois</div>
+            <h4>Intensification</h4>
+            <p>Activation coordonnée des producteurs, monitoring continu des signaux, ajustements tactiques. Les contenus circulent, les normes commencent à bouger.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-time">Après · 6-12 mois</div>
+            <h4>Capitalisation</h4>
+            <p>Évaluation, retours terrain, ajustement du cadre et du modèle. Préparation du cycle suivant avec les apprentissages intégrés.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-time">Long terme · 3-5 ans</div>
+            <h4>Infrastructure</h4>
+            <p>L'écosystème continue à produire des récits convergents entre les cycles. Les Tanties formées restent formées. Les leaders progressistes continuent de prêcher. Les médias traitent le sujet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">PAMOJA<em>.</em>CI</div>
+      <p style="color: rgba(255,255,255,0.6); font-size: 14px; max-width: 42ch;">Application du Narrative Ecosystem Design aux campagnes du projet PAMOJA en Côte d'Ivoire. Handbook v2 · 2026.</p>
+    </div>
+    <div>
+      <h4>Handbook</h4>
+      <a href="strategie.html">Stratégie</a>
+      <a href="personas.html">Personas</a>
+      <a href="matrice.html">Matrice</a>
+      <a href="services.html">Services</a>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <a href="dashboard.html">Data</a>
+      <a href="outils.html">Outils</a>
+      <a href="sources.html">Sources</a>
+      <a href="ned.html">Le modèle NED</a>
+    </div>
+    <div>
+      <h4>À propos</h4>
+      <a href="apropos.html">PAMOJA CI</a>
+      <a href="mailto:contact@pamoja-ci.org">Contact</a>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <span>RAES · 2026 · Handbook v2</span>
+    <span>Données snapshot · Avril 2026</span>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>
