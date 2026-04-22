@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard data — PAMOJA CI</title>
+<meta name="description" content="Huit visualisations clés construites à partir des sources ivoiriennes disponibles : Talkwalker, Google Trends, commentaires PCTC, revue de presse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">PAMOJA<em>CI · Handbook narratif</em></a>
+    <div class="nav-links">
+      <a href="ned.html">Le modèle</a>
+      <a href="strategie.html">Stratégie</a>
+      <a href="personas.html">Personas</a>
+      <a href="matrice.html">Matrice</a>
+      <a href="services.html">Services</a>
+      <a href="dashboard.html">Data</a>
+      <a href="outils.html">Outils</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <a href="dashboard.html" class="active">FR</a>
+        <a href="en/index.html" title="English version available only on selected pages">EN</a>
+      </div>
+      <span class="nav-cta-disabled" title="Zone interne — bientôt disponible">Espace équipe</span>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+
+  <section class="dash-header">
+    <div class="dash-header-inner">
+      <div class="eyebrow">Data · Snapshot avril 2026</div>
+      <h1>Ce que les données <em>disent</em>.</h1>
+      <p class="lead" style="max-width: 62ch;">Huit visualisations clés construites à partir des sources ivoiriennes disponibles : Talkwalker, Google Trends, commentaires PCTC, revue de presse, recherche formative. Les chiffres sont tracés et la méthodologie documentée. Prochain rafraîchissement trimestriel.</p>
+    </div>
+  </section>
+
+  <div class="dash-grid">
+
+    <div class="dash-card span-2">
+      <h4>Fait structurant</h4>
+      <div class="title-sm">Part de femmes ayant été enceintes ayant déjà avorté</div>
+      <div class="big-stat"><em>43</em>%</div>
+      <div class="stat-legend">des femmes ivoiriennes ayant été enceintes ont eu au moins un avortement provoqué. Elles sont partout, invisibilisées par le silence social.</div>
+      <div class="source">Source · PMA 2017 Côte d'Ivoire</div>
+    </div>
+
+    <div class="dash-card span-2">
+      <h4>Mortalité maternelle</h4>
+      <div class="title-sm">Part due à l'avortement clandestin</div>
+      <div class="big-stat">10 <span style="font-size: 40px; color: var(--ink-muted);">à</span> <em>18</em>%</div>
+      <div class="stat-legend">de la mortalité maternelle en CI est liée à l'avortement non sécurisé. Taux de mortalité maternelle : 502 à 944 pour 100 000 naissances vivantes.</div>
+      <div class="source">Source · OMS et données Ministère CI</div>
+    </div>
+
+    <div class="dash-card span-2" style="background: var(--ink); color: var(--bg);">
+      <h4 style="color: rgba(255,255,255,0.5);">Marché clandestin</h4>
+      <div class="title-sm" style="color: var(--bg);">Pages Facebook vendant du misoprostol</div>
+      <div class="big-stat" style="color: var(--bg);">29 <em style="color: var(--accent);">000</em>+</div>
+      <div class="stat-legend" style="color: rgba(255,255,255,0.7);">abonnés cumulés sur 6 pages identifiées dans la recherche formative, avec 10+ posts par jour. Offre clandestine dominante, problème de captation de demande.</div>
+      <div class="source" style="color: rgba(255,255,255,0.4); border-color: rgba(255,255,255,0.2);">Source · Recherche formative RAES 2024</div>
+    </div>
+
+    <div class="dash-card span-3">
+      <h4>Social listening Talkwalker</h4>
+      <div class="title-sm">Sentiment sur 515 mentions CI (août 2025 — avril 2026)</div>
+      <div class="bar-list" style="margin-top: 10px;">
+        <div class="bar-row">
+          <span class="bar-label">Négatif</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 55%; background: var(--accent);"></div></div>
+          <span class="bar-value">55,0%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Neutre</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 39%; background: var(--ochre);"></div></div>
+          <span class="bar-value">39,2%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Positif</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 6%; background: var(--forest);"></div></div>
+          <span class="bar-value">5,8%</span>
+        </div>
+      </div>
+      <p style="font-size: 13px; margin-top: 20px; color: var(--ink-muted);">84 % des mentions viennent de Twitter/X. Le mot le plus fréquemment associé : « viol » (89,6 % des mentions).</p>
+      <div class="source">Source · Talkwalker, corpus CI filtré</div>
+    </div>
+
+    <div class="dash-card span-3">
+      <h4>Google Trends · 12 derniers mois</h4>
+      <div class="title-sm">Top requêtes associées à « avortement » en CI</div>
+      <div class="bar-list" style="margin-top: 10px;">
+        <div class="bar-row">
+          <span class="bar-label">« médicament avortement »</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div>
+          <span class="bar-value">100</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">« comment faire un avortement »</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 70%;"></div></div>
+          <span class="bar-value">70</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">« pilule pour avortement prix »</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 68%;"></div></div>
+          <span class="bar-value">68</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">« misoprostol »</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 55%;"></div></div>
+          <span class="bar-value">55</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">« misofem »</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 37%;"></div></div>
+          <span class="bar-value">37</span>
+        </div>
+      </div>
+      <p style="font-size: 13px; margin-top: 20px; color: var(--ink-muted);">Les femmes cherchent l'info d'auto-médication. Elle doit exister et être fiable.</p>
+      <div class="source">Source · Google Trends CI, 12 derniers mois</div>
+    </div>
+
+    <div class="dash-card span-3">
+      <h4>Commentaires campagne #ParceQueTuComptes</h4>
+      <div class="title-sm">Ratio des conseils donnés dans les commentaires</div>
+      <div style="display: flex; gap: 40px; margin-top: 20px; align-items: flex-end; flex-wrap: wrap;">
+        <div>
+          <div class="big-stat" style="color: var(--forest); font-size: 48px;">18</div>
+          <div class="stat-legend">Pro-avortement<br>« il faut avorter »</div>
+        </div>
+        <div style="font-family: var(--serif); font-size: 28px; color: var(--ink-muted); padding-bottom: 16px;">:</div>
+        <div>
+          <div class="big-stat" style="color: var(--accent); font-size: 48px;">10</div>
+          <div class="stat-legend">Anti-avortement<br>« ne fais pas ça »</div>
+        </div>
+        <div style="margin-left: auto; text-align: right;">
+          <div style="font-family: var(--mono); font-size: 11px; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em;">Ratio</div>
+          <div style="font-family: var(--serif); font-style: italic; font-size: 36px; color: var(--ink);">1,8:1</div>
+        </div>
+      </div>
+      <p style="font-size: 13px; margin-top: 20px; color: var(--ink-muted);">Le vrai problème dans les commentaires n'est pas l'opposition à l'avortement — c'est la moquerie misogyne et le victim-blaming sur les histoires d'inceste et de viol.</p>
+      <div class="source">Source · Export commentaires PCTC, 354 commentaires analysés</div>
+    </div>
+
+    <div class="dash-card span-3">
+      <h4>Revue de presse CI · 80 articles, 12 mois</h4>
+      <div class="title-sm">Narratifs dominants dans les médias</div>
+      <div class="bar-list" style="margin-top: 10px;">
+        <div class="bar-row">
+          <span class="bar-label">Responsabilité féminine</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%; background: var(--accent);"></div></div>
+          <span class="bar-value">13</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Tabou social</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 85%; background: var(--terre);"></div></div>
+          <span class="bar-value">11</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Compassion religieuse</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 85%; background: var(--forest);"></div></div>
+          <span class="bar-value">11</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Danger sanitaire</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 85%; background: var(--ochre);"></div></div>
+          <span class="bar-value">11</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">Absence des hommes</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 54%; background: var(--blue);"></div></div>
+          <span class="bar-value">7</span>
+        </div>
+      </div>
+      <p style="font-size: 13px; margin-top: 20px; color: var(--ink-muted);">« Responsabilité féminine dominante » et « absence des hommes » cumulent 20 articles. Validation du pilier 4.</p>
+      <div class="source">Source · Revue de presse CI RAES, 80 articles codifiés</div>
+    </div>
+
+    <div class="dash-card span-6" style="background: var(--accent-soft); border-color: var(--accent);">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+        <div style="flex: 1; min-width: 300px;">
+          <h4 style="color: var(--accent-dark);">Méthodologie</h4>
+          <div class="title-sm">Données sourcées et traçables. Rafraîchissement trimestriel prévu.</div>
+          <p style="font-size: 14px; max-width: 60ch; color: var(--ink-2);">Le chiffre « 79 % de sentiment négatif » de la v1 n'a pas été reconstituable à partir du fichier Talkwalker source — il a été retiré et remplacé par les chiffres tracés ci-dessus. Toute donnée publiée ici fait l'objet d'une source vérifiable et d'une date.</p>
+        </div>
+        <a class="btn btn-accent" href="sources.html">Méthodologie complète →</a>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">PAMOJA<em>.</em>CI</div>
+      <p style="color: rgba(255,255,255,0.6); font-size: 14px; max-width: 42ch;">Application du Narrative Ecosystem Design aux campagnes du projet PAMOJA en Côte d'Ivoire. Handbook v2 · 2026.</p>
+    </div>
+    <div>
+      <h4>Handbook</h4>
+      <a href="strategie.html">Stratégie</a>
+      <a href="personas.html">Personas</a>
+      <a href="matrice.html">Matrice</a>
+      <a href="services.html">Services</a>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <a href="dashboard.html">Data</a>
+      <a href="outils.html">Outils</a>
+      <a href="sources.html">Sources</a>
+      <a href="ned.html">Le modèle NED</a>
+    </div>
+    <div>
+      <h4>À propos</h4>
+      <a href="apropos.html">PAMOJA CI</a>
+      <a href="mailto:contact@pamoja-ci.org">Contact</a>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <span>RAES · 2026 · Handbook v2</span>
+    <span>Données snapshot · Avril 2026</span>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>

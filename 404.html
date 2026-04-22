@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page non trouvée — PAMOJA CI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<style>
+  .notfound {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 32px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .notfound .big404 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(100px, 20vw, 180px);
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+  }
+  .notfound h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(28px, 4vw, 44px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .notfound p {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-muted);
+    max-width: 50ch;
+    margin-bottom: 40px;
+  }
+  .notfound-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="/index.html">PAMOJA<em>CI · Handbook narratif</em></a>
+    <div class="nav-links">
+      <a href="/ned.html">Le modèle</a>
+      <a href="/strategie.html">Stratégie</a>
+      <a href="/personas.html">Personas</a>
+      <a href="/matrice.html">Matrice</a>
+      <a href="/services.html">Services</a>
+      <a href="/dashboard.html">Data</a>
+      <a href="/outils.html">Outils</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <a href="/index.html" class="active">FR</a>
+        <a href="/en/index.html">EN</a>
+      </div>
+      <span class="nav-cta-disabled" title="Zone interne — bientôt disponible">Espace équipe</span>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+  <div class="notfound">
+    <div class="big404">404</div>
+    <h1>Cette page n'existe pas.</h1>
+    <p>Ou alors elle existe encore, mais elle n'est pas sur ce site. Ou alors elle n'existe plus, mais elle a existé un jour. Un handbook est un document vivant — certaines choses bougent.</p>
+    <div class="notfound-links">
+      <a class="btn" href="/index.html">Retour à l'accueil</a>
+      <a class="btn btn-accent" href="/ned.html">Découvrir le modèle NED</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">PAMOJA<em>.</em>CI</div>
+      <p style="color: rgba(255,255,255,0.6); font-size: 14px; max-width: 42ch;">Application du Narrative Ecosystem Design aux campagnes du projet PAMOJA en Côte d'Ivoire. Handbook v2 · 2026.</p>
+    </div>
+    <div>
+      <h4>Handbook</h4>
+      <a href="/strategie.html">Stratégie</a>
+      <a href="/personas.html">Personas</a>
+      <a href="/matrice.html">Matrice</a>
+      <a href="/services.html">Services</a>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <a href="/dashboard.html">Data</a>
+      <a href="/outils.html">Outils</a>
+      <a href="/sources.html">Sources</a>
+      <a href="/ned.html">Le modèle NED</a>
+    </div>
+    <div>
+      <h4>À propos</h4>
+      <a href="/apropos.html">PAMOJA CI</a>
+      <a href="mailto:contact@pamoja-ci.org">Contact</a>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <span>RAES · 2026 · Handbook v2</span>
+    <span>Données snapshot · Avril 2026</span>
+  </div>
+</footer>
+
+<script src="/assets/nav.js"></script>
+</body>
+</html>
